@@ -1,0 +1,72 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  position: fixed;
+}
+
+.section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 33.33vw;
+  font-size: 30px;
+}
+
+.section img {
+  height: 100vh;
+}
+
+.img-gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.section--text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 99;
+  color: #fff;
+  font-size: 200px;
+  opacity: 0.5;
+}
+
+.navi {
+  position: fixed;
+  bottom: 2%;
+  border-radius: 50%;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 1;
+}
+
+.navi--prev {
+  left: 2.188rem;
+}
+
+.navi--next {
+  right: 2.188rem;
+}
